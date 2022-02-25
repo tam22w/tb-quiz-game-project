@@ -1,4 +1,3 @@
-# tb-quiz-game-project
 Quiz Game Project 
 Scenario: 
 - As a Boot Camp Instructor 
