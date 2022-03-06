@@ -5,11 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
     <title>Scoreboard</title>
 </head>
 <body>
+   
+    
+    <h2>High Score Table</h2>
+    <div id="score-board" class="row0">
+        <div class="column">Seconds Remaining: <span id="timer"></span></div>
+        <div class="column">Score: <span id="score"></span></div>
+    </div>
+
+
     <h5>Scoreboard</h5>
-   <div class="flexbox-container">
+  <div class="table th td "></div>
+<table>
+    
+  <tr>
+    <th>Rank</th>
+    <th>Score</th>
+    <th>Initials</th>
+  </tr>
+  <tr>
+    <td>first</td>
+    <td>100</td>
+    <td>GMA</td>
+  </tr>
+  <tr>
+    <td>first</td>
+    <td>100</td>
+    <td>MEX</td>
+  </tr>
+  <tr>
+    <td>second</td>
+    <td>90</td>
+    <td>AUS</td>
+  </tr>
+  <tr>
+    <td>third</td>
+    <td>80</td>
+    <td>TBS</td>
+  </tr>
+  
+</table>
+    
+    <div id="second" class="row1">
+
+        <div id="questions" class="questions">
+        </div>
+        <div id="score-board" class="row0 hide">
+            <div class="column">Seconds Remaining: <span id="timer"></span></div>
+            <div class="column">Score: <span id="score"></span></div>
+ <div id="enterHighScore"  class="hide"
+
+
+function showHighScores(){
+    let highScoresDiv = document.getElementById('high-scores'):
+    let table = document.createElement('table');
+    let tableRowHeader = document.createElement('tr');
+    let tableRowHeader0 = document.createElement('th');
+    let tableRowHeader1= document.createElement('th');
+    let tableRowHeader2 = document.createElement('th');
+}
+
+    tableheader0.innerText = 'Rank';
+    tableheader1.innerText = 'Score';
+    tableheader2.innerText = 'Tnitials';
+    tableRowHeader.appendChild(tableheader0);
+    tableRowHeader.appendChild(tableheader1);
+    tableRowHeader.appendChild(tableheader2);
+    table.appendChild(tableRowHeader);
+
+    let hScore = localStorage.getItem(highScoreKey)
+    ? JSON.parse(localStorage.getItem(hihgScoreKey))
+    : []:
+
+    let i=0;
+    while(i,hScore.length)   {
+        console.log"hScores[i].score:", hScore[i].score;
+        console.log"hScores[i].initials:", hScore[i].initials;
+        i++;
+
+        
+
+
+
+    }
+
+    highScoresDiv.appendChild(table);
+    highScoresDiv.classlist.remove('hide');
+
+    document.getElementById('enterHighScore').classlist.add('hide');
+    document.getElementById('score-board').classlist.add('hide');
+</div>  
+   <!--<div class="flexbox-container">
         <div class="flexbox-item  Flexbox-item-1">High Scores</div>
         <div class="flexbox-item  Flexbox-item-2">Rank</div>
         <div class="flexbox-item Flexbox-item-3">Score</div>
@@ -29,9 +119,9 @@
         <div class="flexbox-item  Flexbox-item-15">CCC</div>
 
         <div class="flexbox-item  flexbox-item-16">DDD</div>
-        <!--<div class="axis main-axis"></div>
-        <div class="axis cross-axis"></div>-->
-    </div>
+        <div class="axis main-axis"></div>
+        <div class="axis cross-axis"></div>
+    </div>-->
        
        
         

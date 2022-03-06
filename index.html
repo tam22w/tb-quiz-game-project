@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,75 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TB Quiz Game</title>
-
-    <h4>Quiz Game</h4>
-<!--<a href="questions.html"><Questions>Question</a>-->
-
-<link  rel="stylesheet" href="style.css" >
-
-</head>
-<body>
-    <!--<fieldset>
-        <legend>Quiz</legend>-->
-    <form>
-<!--<div  class= "welcome center">-->
-<div class= "welcome center ">
-    <p> Test your front end web developer skills<br>
-      by answering the following questions.</p>
-   
- 
-     
-     <button id="btnBegin" onclick="doSomething();">Begin</button><br>
-    </div>
-    <!--<div  class= "welcome center">-->
-
-
-     <!--<p>
-        Test your front end web developer skills<br>
-        by answering the following questions.
-     </p>
-     
-     </fieldset> easier to use 
- 
-     <button id="btnBegin" onclick="document.loccation=questions());">Begin</button>-->
-
-   
-
-
-    </div>
-    <script src="script.js"></script>   
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TB Quiz Game</title>
-
-    <h1>Frontend Web Developer Game</h1>
-
-
-
-<link  rel="stylesheet" href="style.css" >
-</head>
-<body>
-    <form>
-<!--<div  class= "welcome center">-->
- <fieldset>
-     <legend>Quiz</legend>
-
-     
-     Test your front end web developer skills<br>
-      by answering the following questions. </fieldset>
- 
-     <button id="btnBegin" onclick="doSomething();">Begin</button>
     
+    <h4>Quiz Game</h4>
 
 
-    </div>
-    <a href="script.js"></a>   
+<link  rel="stylesheet" href="style.css" >
+<script src="script.js" defer></script> 
+
+<div id="score-board" class="hide"
+    <div id= "timeContainer">Time Remaining: <span id="timer" style="text-align:left"></span></div>
+    <div id= "scoreContainer"> Score: <span id="score" style="text-align:right"></span></div>
+</div>
+</head>
+<body>
+  
+    <div  id= "main center">
+        <div id= "greeting"  class="welcome">
+            <p> Test your front end web developer skills<br>
+              by answering the following questions.</p>
+           
+              <button id="btnBegin" onclick="doGame();">Begin</button><br>
+            </div>
+            
+           <!--<div id="questions">
+                <div class="answer">
+                     <input id="quest0_answer5" type="radio" name="quest0" class="answer quest0"></input>
+                     <label for="quest0_answer5">A possible Answer</label></div>
+   <br>
+        
+    
+     
+    </div>-->
+    
+      
 </body>
->>>>>>> 6766a91a271e1e162c3339cf791fbf08919f568c
 </html>
